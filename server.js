@@ -17,8 +17,16 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 mongoose.connect(dbConfig.url, {
-	useMongoClient: true
-});
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useUnifiedTopology: true,
+        
+    })
+        .then(() => console.log("Mongodb database Connected"))
+        .catch(err => console.log(err)
+);
+
+
 
 mongoose.connection.on('error', function() {
     console.log('Could not connect to the database. Exiting now...');
