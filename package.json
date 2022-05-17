@@ -16,8 +16,11 @@
   "author": "callicoder",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "dotenv": "^16.0.1",
     "express": "^4.16.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^4.13.6",
     "serve": "^13.0.2"
   }
